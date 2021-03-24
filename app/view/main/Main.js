@@ -18,7 +18,8 @@ Ext.define('App.view.main.Main', {
     viewModel: {
         data: {
             loremIpsum: 'teste',
-            loremIpsumSS: 'teste Fois'
+            loremIpsumSS: 'teste Fois',
+            name: 'DumbBox'
         }
     },
 
