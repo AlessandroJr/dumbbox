@@ -10,9 +10,9 @@ Ext.application({
     requires: [
         // This will automatically load all classes in the DumbBox namespace
         // so that application classes do not need to require each other.
-        'DumbBox.*'
+        'App.view.main.Main'
     ],
 
     // The name of the initial view to create.
-    mainView: 'DumbBox.view.main.Main'
+    mainView: 'App.view.main.Main'
 });

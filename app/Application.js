@@ -8,6 +8,10 @@ Ext.define('DumbBox.Application', {
 
     name: 'DumbBox',
 
+    requires: [
+        'App.view.main.Main'
+    ],
+
     quickTips: false,
     platformConfig: {
         desktop: {

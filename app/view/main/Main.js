@@ -5,21 +5,22 @@
  *
  * TODO - Replace this content of this view to suite the needs of your application.
  */
-Ext.define('DumbBox.view.main.Main', {
+Ext.define('App.view.main.Main', {
     extend: 'Ext.tab.Panel',
     xtype: 'app-main',
 
     requires: [
         'Ext.plugin.Viewport',
         'Ext.window.MessageBox',
-
-        'DumbBox.view.main.MainController',
-        'DumbBox.view.main.MainBody',
-        'DumbBox.view.main.List'
     ],
 
-    controller: 'main',
-    viewModel: 'main',
+    // controller: 'main',
+    viewModel: {
+        data: {
+            loremIpsum: 'teste',
+            loremIpsumSS: 'teste Fois'
+        }
+    },
 
     ui: 'navigation',
 
@@ -79,7 +80,7 @@ Ext.define('DumbBox.view.main.Main', {
         iconCls: 'fa-home',
         // The following grid shares a store with the classic version's grid as well!
         items: [{
-            xtype: 'mainlist'
+            html: '{loremIpsumSS}'
         }]
     }, {
         title: 'Users',
