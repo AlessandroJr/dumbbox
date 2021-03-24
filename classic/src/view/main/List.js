@@ -18,6 +18,7 @@ Ext.define('DumbBox.view.main.List', {
     columns: [
         { text: 'Name',  dataIndex: 'name' },
         { text: 'Email', dataIndex: 'email', flex: 1 },
+        { text: 'Car',   dataIndex: 'car',   flex: 1 },
         { text: 'Phone', dataIndex: 'phone', flex: 1 }
     ],
 
