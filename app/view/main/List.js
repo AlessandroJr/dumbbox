@@ -1,15 +1,18 @@
 /**
  * This view is an example list of people.
  */
-Ext.define('DumbBox.view.main.List', {
+Ext.define('App.view.main.List', {
     extend: 'Ext.grid.Panel',
     xtype: 'mainlist',
 
     requires: [
-        'DumbBox.store.Personnel'
+        'DumbBox.store.Personnel',
+        'App.view.main.ListController'
     ],
 
     title: 'Personnel',
+
+    controller: 'main-listcontroller',
 
     store: {
         type: 'personnel'

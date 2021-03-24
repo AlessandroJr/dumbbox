@@ -6,12 +6,15 @@
  * TODO - Replace this content of this view to suite the needs of your application.
  */
 Ext.define('App.view.main.Main', {
-    extend: 'Ext.tab.Panel',
+    extend: 'Ext.panel.Panel',
     xtype: 'app-main',
 
     requires: [
         'Ext.plugin.Viewport',
         'Ext.window.MessageBox',
+
+        'DumbBox.store.Personnel',
+        'App.view.main.List'
     ],
 
     // controller: 'main',
@@ -20,12 +23,18 @@ Ext.define('App.view.main.Main', {
             loremIpsum: 'teste',
             loremIpsumSS: 'teste Fois',
             name: 'DumbBox'
-        }
+        },
+
+        // stores: {
+        //     Personnel: {
+        //         type: 'personnel'
+        //     }
+        // }
     },
 
     ui: 'navigation',
 
-    tabBarHeaderPosition: 1,
+    tabBarHeaderPosition: 0,
     titleRotation: 0,
     tabRotation: 0,
 
@@ -81,27 +90,27 @@ Ext.define('App.view.main.Main', {
     // },
 
     items: [{
+        // xtype: '',
         title: 'Home',
-        iconCls: 'fa-home',
-        // The following grid shares a store with the classic version's grid as well!
+        iconCls: 'fa fa-home',
         items: [{
-            html: '{loremIpsumSS}'
+            xtype: 'mainlist'
         }]
     }, {
         title: 'Users',
-        iconCls: 'fa-user',
+        iconCls: 'fa fa-user',
         bind: {
             html: '{loremIpsum}'
         }
     }, {
         title: 'Groups',
-        iconCls: 'fa-users',
+        iconCls: 'fa fa-users',
         bind: {
             html: '{loremIpsum}'
         }
     }, {
         title: 'Settings',
-        iconCls: 'fa-cog',
+        iconCls: 'fa fa-cog',
         bind: {
             html: '{loremIpsum}'
         }
