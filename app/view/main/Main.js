@@ -50,31 +50,35 @@ Ext.define('App.view.main.Main', {
         }
     },
 
-    responsiveConfig: {
-        tall: {
-            headerPosition: 'top'
-        },
-        wide: {
-            headerPosition: 'left'
-        }
-    },
+    headerPosition: 'left',
 
-    defaults: {
-        bodyPadding: 20,
-        tabConfig: {
-            responsiveConfig: {
-                wide: {
-                    iconAlign: 'left',
-                    textAlign: 'left'
-                },
-                tall: {
-                    iconAlign: 'top',
-                    textAlign: 'center',
-                    width: 120
-                }
-            }
-        }
-    },
+
+    // joga a barra lateral pra um menu no topo da tela(de forma responsiva), tentar ver uma forma disso ajudar a fazer uma barra padrão
+    // responsiveConfig: {
+    //     tall: {
+    //         headerPosition: 'top'
+    //     },
+    //     wide: {
+    //         headerPosition: 'left'
+    //     }
+    // },
+
+    // defaults: {
+    //     bodyPadding: 20,
+    //     tabConfig: {
+    //         responsiveConfig: {
+    //             wide: {
+    //                 iconAlign: 'left',
+    //                 textAlign: 'left'
+    //             },
+    //             tall: {
+    //                 iconAlign: 'top',
+    //                 textAlign: 'center',
+    //                 width: 120
+    //             }
+    //         }
+    //     }
+    // },
 
     items: [{
         title: 'Home',
