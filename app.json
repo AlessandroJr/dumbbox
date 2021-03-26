@@ -1,6 +1,6 @@
 {
-    "name": "DumbBox",
-    "namespace": "DumbBox",
+    "name": "App",
+    "namespace": "App",
     "version": "1.0.0.0",
     "framework": "ext",
     "toolkit": "classic",
@@ -64,13 +64,13 @@
     "sass": {
         /**
          * The root namespace to use when mapping *.scss files to classes in the
-         * sass/src and sass/var directories. For example, "DumbBox.view.Foo" would
-         * map to "sass/src/view/Foo.scss". If we changed this to "DumbBox.view" then
+         * sass/src and sass/var directories. For example, "App.view.Foo" would
+         * map to "sass/src/view/Foo.scss". If we changed this to "App.view" then
          * it would map to "sass/src/Foo.scss". To style classes outside the app's
          * root namespace, change this to "". Doing so would change the mapping of
-         * "DumbBox.view.Foo" to "sass/src/DumbBox/view/Foo.scss".
+         * "App.view.Foo" to "sass/src/App/view/Foo.scss".
          */
-        "namespace": "DumbBox",
+        "namespace": "App",
 
         /**
          * Generated sass source settings

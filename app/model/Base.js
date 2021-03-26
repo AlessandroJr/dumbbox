@@ -1,7 +1,7 @@
-Ext.define('DumbBox.model.Base', {
+Ext.define('App.model.Base', {
     extend: 'Ext.data.Model',
 
     schema: {
-        namespace: 'DumbBox.model'
+        namespace: 'App.model'
     }
 });

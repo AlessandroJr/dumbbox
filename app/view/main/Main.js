@@ -5,7 +5,7 @@
  *
  * TODO - Replace this content of this view to suite the needs of your application.
  */
-Ext.define('DumbBox.view.main.Main', {
+Ext.define('App.view.main.Main', {
     extend: 'Ext.tab.Panel',
     xtype: 'app-main',
 
@@ -13,9 +13,9 @@ Ext.define('DumbBox.view.main.Main', {
         'Ext.plugin.Viewport',
         'Ext.window.MessageBox',
 
-        'DumbBox.view.main.MainController',
-        'DumbBox.view.main.MainModel',
-        'DumbBox.view.main.List'
+        'App.view.main.MainController',
+        'App.view.main.MainModel',
+        'App.view.main.List'
     ],
 
     controller: 'main',

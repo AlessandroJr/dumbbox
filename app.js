@@ -3,16 +3,16 @@
  * and launch() the Application class.
  */
 Ext.application({
-    extend: 'DumbBox.Application',
+    extend: 'App.Application',
 
-    name: 'DumbBox',
+    name: 'App',
 
     requires: [
-        // This will automatically load all classes in the DumbBox namespace
+        // This will automatically load all classes in the App namespace
         // so that application classes do not need to require each other.
-        'DumbBox.*'
+        'App.*'
     ],
 
     // The name of the initial view to create.
-    mainView: 'DumbBox.view.main.Main'
+    mainView: 'App.view.main.Main'
 });

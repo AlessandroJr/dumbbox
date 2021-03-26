@@ -1,9 +1,9 @@
-Ext.define('DumbBox.store.Personnel', {
+Ext.define('App.store.Personnel', {
     extend: 'Ext.data.Store',
 
     alias: 'store.personnel',
 
-    model: 'DumbBox.model.Personnel',
+    model: 'App.model.Personnel',
 
     data: { items: [
         { name: 'Jean Luc', email: "jeanluc.picard@enterprise.com", phone: "555-111-1111" },

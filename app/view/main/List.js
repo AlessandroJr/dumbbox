@@ -1,12 +1,12 @@
 /**
  * This view is an example list of people.
  */
-Ext.define('DumbBox.view.main.List', {
+Ext.define('App.view.main.List', {
     extend: 'Ext.grid.Panel',
     xtype: 'mainlist',
 
     requires: [
-        'DumbBox.store.Personnel'
+        'App.store.Personnel'
     ],
 
     title: 'Personnel',

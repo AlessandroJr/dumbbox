@@ -1,5 +1,5 @@
-Ext.define('DumbBox.model.Personnel', {
-    extend: 'DumbBox.model.Base',
+Ext.define('App.model.Personnel', {
+    extend: 'App.model.Base',
 
     fields: [
         'name', 'email', 'phone'
